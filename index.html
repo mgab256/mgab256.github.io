@@ -14,7 +14,7 @@
     
     <script type="text/processing">
     
-      import processing.sound.*;
+     // import processing.sound.*;
 
 PImage duo;
 PImage bg, bg2;
@@ -26,7 +26,7 @@ boolean gameState;
  int score, highScore; 
  int highScores = 0; 
 
-SoundFile clickSound;
+//SoundFile clickSound;
  
  
  
@@ -49,7 +49,7 @@ void setup(){
   gameState = true;
   score = 0; 
   
- clickSound = new SoundFile(this, "sound.wav"); 
+// clickSound = new SoundFile(this, "sound.wav"); 
 }
 
 
@@ -82,7 +82,7 @@ void checkCrash(){
 }
 void mousePressed(){
   Vy = -8;
-  clickSound.play(); 
+ // clickSound.play(); 
 }
  
 void drawPipes(){
